@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2a2a31"/><stop offset="1" stop-color="#16161a"/></linearGradient>
+    <radialGradient id="lamp" cx=".35" cy=".25" r=".7"><stop offset="0" stop-color="#ffb066" stop-opacity=".18"/><stop offset="1" stop-color="#ffb066" stop-opacity="0"/></radialGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f3f1"/><stop offset="1" stop-color="#d9d7d3"/></linearGradient>
+    <linearGradient id="scr" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#15151a"/><stop offset="1" stop-color="#0b0b0e"/></linearGradient>
+    <linearGradient id="door" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#5a3a24"/><stop offset="1" stop-color="#3f2817"/></linearGradient>
+    <filter id="sh" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#000" flood-opacity=".55"/></filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#wall)"/>
+  <rect width="800" height="600" fill="url(#lamp)"/>
+
+  <!-- door at right -->
+  <rect x="560" y="70" width="210" height="530" fill="#1b1b20"/>
+  <rect x="574" y="84" width="182" height="516" fill="url(#door)"/>
+  <g fill="none" stroke="#2e1d10" stroke-width="3"><rect x="598" y="112" width="134" height="190" rx="4"/><rect x="598" y="330" width="134" height="230" rx="4"/></g>
+  <rect x="588" y="320" width="10" height="38" rx="5" fill="#c9c6c1"/>
+  <!-- door contact sensor -->
+  <g filter="url(#sh)">
+    <rect x="574" y="150" width="14" height="52" rx="4" fill="#f4f3f1"/>
+    <rect x="546" y="150" width="14" height="70" rx="4" fill="#f4f3f1"/>
+  </g>
+  <circle cx="553" cy="162" r="3" fill="#57d18a"/>
+  <text x="494" y="262" font-family="Menlo, monospace" font-size="11" fill="#a6a2a0" letter-spacing="1" text-anchor="start">DOOR</text><text x="494" y="277" font-family="Menlo, monospace" font-size="11" fill="#a6a2a0" letter-spacing="1">SENSOR</text>
+  <path d="M520 248l26-24" stroke="#6f6b69" stroke-width="1.5"/>
+
+  <!-- motion sensor in corner -->
+  <g filter="url(#sh)">
+    <path d="M40 40h90l-10 54q-35 16-70 0Z" fill="url(#panel)"/>
+    <ellipse cx="85" cy="70" rx="24" ry="14" fill="#c7c4bf"/>
+    <ellipse cx="85" cy="70" rx="15" ry="8" fill="#9f9b95"/>
+  </g>
+  <circle cx="110" cy="54" r="3" fill="#f28a25"/>
+  <g fill="none" stroke="#f28a25" stroke-width="2" opacity=".5"><path d="M110 120q30 30 70 40"/><path d="M100 140q26 40 70 60" opacity=".6"/></g>
+  <text x="150" y="80" font-family="Menlo, monospace" font-size="11" fill="#a6a2a0" letter-spacing="1">MOTION SENSOR</text>
+
+  <!-- touchscreen alarm panel -->
+  <g filter="url(#sh)">
+    <rect x="150" y="170" width="330" height="250" rx="22" fill="url(#panel)"/>
+  </g>
+  <rect x="170" y="188" width="290" height="190" rx="10" fill="url(#scr)"/>
+  <!-- screen content -->
+  <text x="186" y="212" font-size="11" fill="#a6a2a0">Tue 9:41 PM</text>
+  <text x="444" y="212" text-anchor="end" font-size="11" fill="#a6a2a0">72°</text>
+  <path d="M206 230l26 10v18c0 16-11 27-26 32-15-5-26-16-26-32v-18z" fill="#f28a25"/>
+  <rect x="197" y="256" width="18" height="14" rx="2" fill="#140a02"/><path d="M201 256v-5a5 5 0 0 1 10 0v5" fill="none" stroke="#140a02" stroke-width="3"/>
+  <text x="248" y="252" font-size="20" font-weight="800" fill="#f3f1ee">ARMED AWAY</text>
+  <text x="248" y="272" font-size="11" fill="#a6a2a0">Exit delay complete · 12 zones</text>
+  <!-- buttons -->
+  <g font-size="11" font-weight="800" text-anchor="middle">
+    <rect x="186" y="304" width="82" height="56" rx="10" fill="#1f1f26" stroke="#34343d"/>
+    <text x="227" y="337" fill="#f3f1ee">ARM STAY</text>
+    <rect x="274" y="304" width="82" height="56" rx="10" fill="#f28a25"/>
+    <text x="315" y="337" fill="#140a02">ARM AWAY</text>
+    <rect x="362" y="304" width="82" height="56" rx="10" fill="#1f1f26" stroke="#34343d"/>
+    <text x="403" y="337" fill="#f3f1ee">DISARM</text>
+  </g>
+  <!-- panel bottom -->
+  <circle cx="200" cy="398" r="6" fill="#57d18a"/>
+  <text x="214" y="402" font-size="11" fill="#55534f">Monitoring connected</text>
+  <g fill="#b9b6b1"><circle cx="440" cy="398" r="2"/><circle cx="448" cy="398" r="2"/><circle cx="456" cy="398" r="2"/></g>
+
+  <!-- light switch for scale -->
+  <rect x="210" y="470" width="44" height="70" rx="6" fill="url(#panel)" filter="url(#sh)"/>
+  <rect x="224" y="486" width="16" height="38" rx="3" fill="#cfccc7"/>
+
+  <!-- smoke detector on ceiling line -->
+  <g filter="url(#sh)"><ellipse cx="350" cy="30" rx="56" ry="18" fill="url(#panel)"/></g>
+  <ellipse cx="350" cy="30" rx="34" ry="9" fill="none" stroke="#b9b6b1" stroke-width="2"/>
+  <circle cx="378" cy="36" r="3" fill="#ff5a36"/>
+  <text x="420" y="40" font-family="Menlo, monospace" font-size="11" fill="#a6a2a0" letter-spacing="1">SMOKE DETECTOR</text>
+</svg>

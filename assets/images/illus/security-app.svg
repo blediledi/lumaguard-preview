@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1a1a20"/><stop offset="1" stop-color="#0b0b0c"/></linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#f28a25" stop-opacity=".35"/><stop offset="1" stop-color="#f28a25" stop-opacity="0"/></radialGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#57d18a"/><stop offset="1" stop-color="#2fa865"/></linearGradient>
+    <linearGradient id="thumb" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3b4149"/><stop offset="1" stop-color="#1d2126"/></linearGradient>
+    <clipPath id="scr"><rect x="290" y="62" width="220" height="476" rx="30"/></clipPath>
+    <filter id="sh" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="24" stdDeviation="24" flood-color="#000" flood-opacity=".6"/></filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <circle cx="400" cy="300" r="300" fill="url(#glow)"/>
+
+  <!-- floating alert cards -->
+  <g filter="url(#sh)">
+    <g transform="translate(70 150)">
+      <rect width="210" height="64" rx="14" fill="#1f1f26" stroke="#34343d"/>
+      <circle cx="32" cy="32" r="16" fill="#f28a25"/>
+      <path d="M26 28h12v10H26z M29 28v-3a3 3 0 0 1 6 0v3" fill="none" stroke="#140a02" stroke-width="2.4"/>
+      <text x="58" y="28" font-size="13" font-weight="700" fill="#f3f1ee">Front door locked</text>
+      <text x="58" y="46" font-size="11" fill="#a6a2a0">Auto-lock · 9:02 PM</text>
+    </g>
+    <g transform="translate(70 360)">
+      <rect width="210" height="64" rx="14" fill="#1f1f26" stroke="#34343d"/>
+      <circle cx="32" cy="32" r="16" fill="#ff5a36"/>
+      <path d="M32 22c3 5-5 7-5 13a5 5 0 0 0 10 0c0-3-2-5-2-7 3 2 5 5 5 8" fill="none" stroke="#140a02" stroke-width="2.4" stroke-linecap="round"/>
+      <text x="58" y="28" font-size="13" font-weight="700" fill="#f3f1ee">Smoke detectors OK</text>
+      <text x="58" y="46" font-size="11" fill="#a6a2a0">Monthly self-test passed</text>
+    </g>
+    <g transform="translate(520 250)">
+      <rect width="210" height="64" rx="14" fill="#1f1f26" stroke="#34343d"/>
+      <circle cx="32" cy="32" r="16" fill="#57d18a"/>
+      <rect x="22" y="26" width="14" height="12" rx="2" fill="#0b2415"/><path d="M36 30l6-4v12l-6-4z" fill="#0b2415"/>
+      <text x="58" y="28" font-size="13" font-weight="700" fill="#f3f1ee">Motion at driveway</text>
+      <text x="58" y="46" font-size="11" fill="#a6a2a0">Clip saved · tap to view</text>
+    </g>
+  </g>
+
+  <!-- phone -->
+  <g filter="url(#sh)">
+    <rect x="278" y="50" width="244" height="500" rx="40" fill="#050506" stroke="#3a3a44" stroke-width="3"/>
+  </g>
+  <g clip-path="url(#scr)">
+    <rect x="290" y="62" width="220" height="476" fill="#0f0f13"/>
+    <!-- status bar -->
+    <text x="310" y="88" font-size="11" font-weight="700" fill="#f3f1ee">9:41</text>
+    <rect x="474" y="80" width="18" height="9" rx="2" fill="none" stroke="#f3f1ee" stroke-width="1.4"/><rect x="476" y="82" width="12" height="5" fill="#f3f1ee"/>
+    <rect x="364" y="72" width="72" height="20" rx="10" fill="#000"/>
+    <!-- header -->
+    <text x="310" y="122" font-size="11" fill="#a6a2a0">Good evening</text>
+    <text x="310" y="142" font-size="17" font-weight="800" fill="#f3f1ee">My Property</text>
+    <circle cx="486" cy="134" r="12" fill="#26262e"/><path d="M481 131a5 5 0 0 1 10 0v5h-10z" fill="#f28a25"/>
+    <!-- status ring -->
+    <circle cx="400" cy="226" r="58" fill="none" stroke="#1f3a2b" stroke-width="10"/>
+    <circle cx="400" cy="226" r="58" fill="none" stroke="url(#ring)" stroke-width="10" stroke-linecap="round" stroke-dasharray="364 0"/>
+    <path d="M400 194l24 9v17c0 15-10 25-24 30-14-5-24-15-24-30v-17z" fill="#57d18a"/>
+    <path d="M389 222l8 8 14-15" fill="none" stroke="#0b2415" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="400" y="306" text-anchor="middle" font-size="15" font-weight="800" fill="#57d18a">ARMED · STAY</text>
+    <text x="400" y="322" text-anchor="middle" font-size="10" fill="#a6a2a0">All 12 sensors secure</text>
+    <!-- tiles -->
+    <g font-size="10">
+      <rect x="306" y="338" width="90" height="54" rx="12" fill="#1b1b21"/>
+      <text x="316" y="358" fill="#a6a2a0">Front door</text><text x="316" y="378" font-size="12" font-weight="700" fill="#f3f1ee">Locked</text>
+      <rect x="404" y="338" width="90" height="54" rx="12" fill="#1b1b21"/>
+      <text x="414" y="358" fill="#a6a2a0">Garage</text><text x="414" y="378" font-size="12" font-weight="700" fill="#f3f1ee">Closed</text>
+      <rect x="306" y="400" width="90" height="54" rx="12" fill="#1b1b21"/>
+      <text x="316" y="420" fill="#a6a2a0">Cameras</text><text x="316" y="440" font-size="12" font-weight="700" fill="#f3f1ee">4 live</text>
+      <rect x="404" y="400" width="90" height="54" rx="12" fill="#1b1b21"/>
+      <text x="414" y="420" fill="#a6a2a0">Thermostat</text><text x="414" y="440" font-size="12" font-weight="700" fill="#f3f1ee">72°</text>
+    </g>
+    <circle cx="384" cy="352" r="4" fill="#57d18a"/><circle cx="482" cy="352" r="4" fill="#57d18a"/><circle cx="384" cy="414" r="4" fill="#ff3b30"/>
+    <!-- camera thumbnail -->
+    <rect x="306" y="462" width="188" height="44" rx="10" fill="url(#thumb)"/>
+    <path d="M306 506L360 476H440L494 506Z" fill="#2a2f35"/>
+    <g fill="#0e1114"><circle cx="420" cy="480" r="5"/><path d="M413 506l2-18q5-5 10 0l2 18z"/></g>
+    <text x="314" y="476" font-family="Menlo, monospace" font-size="8" font-weight="700" fill="#fff">DRIVEWAY · LIVE</text>
+    <!-- button -->
+    <rect x="306" y="512" width="188" height="20" rx="10" fill="#f28a25"/>
+    <text x="400" y="526" text-anchor="middle" font-size="10" font-weight="800" fill="#140a02">DISARM</text>
+  </g>
+</svg>

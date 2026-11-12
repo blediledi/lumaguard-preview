@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="room" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#17171c"/><stop offset="1" stop-color="#0a0a0c"/></linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".45" r=".6"><stop offset="0" stop-color="#f28a25" stop-opacity=".22"/><stop offset="1" stop-color="#f28a25" stop-opacity="0"/></radialGradient>
+    <linearGradient id="nv" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a3330"/><stop offset="1" stop-color="#151b19"/></linearGradient>
+    <linearGradient id="day" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3b4149"/><stop offset="1" stop-color="#1d2126"/></linearGradient>
+    <linearGradient id="screenSheen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".07"/><stop offset=".4" stop-color="#fff" stop-opacity="0"/></linearGradient>
+    <clipPath id="f1"><rect x="96" y="78" width="296" height="176" rx="4"/></clipPath>
+    <clipPath id="f2"><rect x="408" y="78" width="296" height="176" rx="4"/></clipPath>
+    <clipPath id="f3"><rect x="96" y="270" width="296" height="176" rx="4"/></clipPath>
+    <clipPath id="f4"><rect x="408" y="270" width="296" height="176" rx="4"/></clipPath>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="2" fill="#000" opacity=".12"/></pattern>
+  </defs>
+
+  <rect width="800" height="560" fill="url(#room)"/>
+  <rect width="800" height="560" fill="url(#glow)"/>
+
+  <!-- desk -->
+  <path d="M0 500H800V560H0Z" fill="#101013"/>
+  <path d="M0 500H800" stroke="#2a2a31" stroke-width="2"/>
+  <!-- stand -->
+  <path d="M370 462h60l14 38h-88Z" fill="#1f1f25"/>
+  <!-- monitor -->
+  <rect x="80" y="62" width="640" height="400" rx="16" fill="#050506" stroke="#2e2e36" stroke-width="3"/>
+
+  <!-- FEED 1 entrance (day) -->
+  <g clip-path="url(#f1)">
+    <rect x="96" y="78" width="296" height="176" fill="url(#day)"/>
+    <path d="M96 254L190 170H298L392 254Z" fill="#2a2f35"/>
+    <path d="M190 170V100H298V170" fill="#333941"/>
+    <rect x="222" y="112" width="44" height="58" fill="#14181c" stroke="#59616b" stroke-width="2"/>
+    <circle cx="258" cy="142" r="2.5" fill="#f28a25"/>
+    <path d="M140 254L208 170M348 254L280 170" stroke="#3d444d" stroke-width="2"/>
+    <!-- person -->
+    <g fill="#0e1114"><circle cx="186" cy="180" r="9"/><path d="M172 238l4-38q10-10 20 0l4 38h-8l-3-20-4 0-3 20Z"/></g>
+    <rect x="164" y="164" width="46" height="80" fill="none" stroke="#f28a25" stroke-width="2"/>
+    <rect x="164" y="152" width="70" height="13" fill="#f28a25"/>
+    <text x="168" y="162" font-size="9" font-weight="700" fill="#140a02">PERSON 98%</text>
+  </g>
+
+  <!-- FEED 2 parking (night vision) -->
+  <g clip-path="url(#f2)">
+    <rect x="408" y="78" width="296" height="176" fill="url(#nv)"/>
+    <g stroke="#4f625a" stroke-width="2"><path d="M440 254L500 150M500 254L530 150M560 254L560 150M620 254L590 150M680 254L620 150"/><path d="M470 196H650"/></g>
+    <!-- car -->
+    <g transform="translate(548 188)">
+      <path d="M-46 22v-14q4-12 18-14l10-14q4-4 12-4h18q8 0 12 4l12 14q14 2 18 14v14Z" fill="#0f1513"/>
+      <circle cx="-26" cy="24" r="8" fill="#070908"/><circle cx="26" cy="24" r="8" fill="#070908"/>
+      <circle cx="-40" cy="12" r="3" fill="#cfe9d9"/><circle cx="40" cy="12" r="3" fill="#cfe9d9"/>
+    </g>
+    <rect x="494" y="160" width="108" height="64" fill="none" stroke="#f28a25" stroke-width="2"/>
+    <rect x="494" y="148" width="62" height="13" fill="#f28a25"/>
+    <text x="498" y="158" font-size="9" font-weight="700" fill="#140a02">VEHICLE</text>
+    <circle cx="440" cy="100" r="22" fill="#cfe9d9" opacity=".07"/>
+  </g>
+
+  <!-- FEED 3 warehouse (day) -->
+  <g clip-path="url(#f3)">
+    <rect x="96" y="270" width="296" height="176" fill="#262b31"/>
+    <path d="M96 446L210 330H278L392 446Z" fill="#1d2126"/>
+    <!-- racks left -->
+    <g fill="#343b44" stroke="#4b535d" stroke-width="1.5">
+      <path d="M96 290L196 334V420L96 446Z"/>
+      <path d="M392 290L292 334V420L392 446Z"/>
+    </g>
+    <g stroke="#f28a25" stroke-width="2" opacity=".75"><path d="M96 330L196 356M96 380L196 386M392 330L292 356M392 380L292 386"/></g>
+    <g fill="#5c4632"><rect x="110" y="340" width="22" height="18"/><rect x="140" y="350" width="20" height="14"/><rect x="350" y="342" width="22" height="18"/><rect x="318" y="356" width="18" height="12"/></g>
+    <!-- forklift -->
+    <g transform="translate(244 400)" fill="#f28a25"><rect x="-14" y="-22" width="22" height="18" rx="2"/><rect x="8" y="-34" width="3" height="34" fill="#9a9a9a"/><rect x="11" y="-6" width="14" height="3" fill="#9a9a9a"/><circle cx="-8" cy="0" r="5" fill="#0d0d0d"/><circle cx="4" cy="0" r="5" fill="#0d0d0d"/></g>
+  </g>
+
+  <!-- FEED 4 yard gate (night vision) -->
+  <g clip-path="url(#f4)">
+    <rect x="408" y="270" width="296" height="176" fill="url(#nv)"/>
+    <path d="M408 400H704V446H408Z" fill="#111715"/>
+    <g stroke="#5a6f66" stroke-width="2">
+      <path d="M408 330H704M408 400H704"/>
+      <path d="M420 330V400M440 330V400M460 330V400M480 330V400M500 330V400M520 330V400M640 330V400M660 330V400M680 330V400M700 330V400"/>
+    </g>
+    <!-- gate -->
+    <g stroke="#9db8ac" stroke-width="2.5" fill="none"><rect x="532" y="320" width="96" height="80"/><path d="M532 320L628 400M628 320L532 400M580 320V400"/></g>
+    <rect x="574" y="352" width="12" height="16" fill="#57d18a"/>
+    <circle cx="660" cy="300" r="12" fill="#cfe9d9" opacity=".5"/>
+  </g>
+
+  <!-- scanlines + sheen over screen -->
+  <rect x="96" y="78" width="608" height="368" fill="url(#scan)"/>
+  <rect x="80" y="62" width="640" height="400" rx="16" fill="url(#screenSheen)"/>
+
+  <!-- feed labels -->
+  <g font-family="Menlo, monospace" font-size="11" font-weight="700" fill="#fff">
+    <g><rect x="104" y="86" width="104" height="18" rx="3" fill="#000" opacity=".55"/><text x="110" y="99">CAM-01 ENTRY</text></g>
+    <g><rect x="416" y="86" width="96" height="18" rx="3" fill="#000" opacity=".55"/><text x="422" y="99">CAM-02 LOT</text></g>
+    <g><rect x="104" y="278" width="132" height="18" rx="3" fill="#000" opacity=".55"/><text x="110" y="291">CAM-03 WAREHOUSE</text></g>
+    <g><rect x="416" y="278" width="104" height="18" rx="3" fill="#000" opacity=".55"/><text x="422" y="291">CAM-04 YARD</text></g>
+  </g>
+  <g font-family="Menlo, monospace" font-size="10" font-weight="700" fill="#fff">
+    <circle cx="352" cy="95" r="4" fill="#ff3b30"/><text x="360" y="99">REC</text>
+    <circle cx="664" cy="95" r="4" fill="#ff3b30"/><text x="672" y="99">REC</text>
+    <circle cx="352" cy="287" r="4" fill="#ff3b30"/><text x="360" y="291">REC</text>
+    <circle cx="664" cy="287" r="4" fill="#ff3b30"/><text x="672" y="291">REC</text>
+  </g>
+
+  <!-- bezel status -->
+  <text x="100" y="456" font-family="Menlo, monospace" font-size="10" fill="#6f6b69" letter-spacing="1.5">LUMAGUARD NVR · 4 CAMERAS ONLINE</text>
+  <circle cx="694" cy="452" r="4" fill="#57d18a"/>
+
+  <!-- desk items: keyboard + mug -->
+  <rect x="250" y="512" width="300" height="26" rx="6" fill="#1a1a20" stroke="#2a2a31"/>
+  <g fill="#26262d"><rect x="262" y="518" width="276" height="5" rx="2"/><rect x="262" y="527" width="276" height="5" rx="2"/></g>
+  <path d="M610 486h36v40q0 8-8 8h-20q-8 0-8-8Z" fill="#7e1f22"/><path d="M646 494q14 0 14 12t-14 12" fill="none" stroke="#7e1f22" stroke-width="5"/>
+</svg>
