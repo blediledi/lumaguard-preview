@@ -24,7 +24,7 @@
   /* 3D tilt + glare on cards and photos (mouse/trackpad only) */
   if (!reduce && matchMedia('(hover: hover) and (pointer: fine)').matches) {
     const targets = [
-      ['.svc__card', 3], ['.smart__fig', 7], ['.access__pics img', 9], ['.gear__in', 2.5], ['.why__item', 6],
+      ['.svc__card', 3], ['.smart__fig', 7], ['.access__scene', 5], ['.gear__in', 2.5], ['.why__item', 6],
     ];
     targets.forEach(([sel, max]) => $$(sel).forEach(el => {
       el.classList.add('tilt');

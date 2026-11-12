@@ -237,8 +237,8 @@
 
     <div class="svc">
               <article class="svc__card svc__card--fire reveal" id="svc-fire">
-          <div class="svc__media">
-                          <img src="assets/images/fire-panel-install.jpg" alt="Technician wiring a control panel mounted on a white wall." loading="lazy">
+          <div class="svc__media" data-scene="fire">
+                          <img src="assets/images/fire-3d.jpg" alt="Red fire alarm control panel, pull station, horn strobe and ceiling smoke detector reacting to smoke." loading="lazy">
                         <span class="svc__num mono">01</span>
           </div>
           <div class="svc__body">
@@ -265,16 +265,16 @@
           </div>
         </article>
               <article class="svc__card svc__card--access reveal" id="svc-access">
-          <div class="svc__media">
-                          <img src="assets/images/access-phone.jpg" alt="A person holding a smartphone near a wall-mounted access reader." loading="lazy">
+          <div class="svc__media" data-scene="keypad">
+                          <img src="assets/images/keypad-3d.jpg" alt="Wall-mounted security keypad: a PIN is entered and the screen changes to Armed Away." loading="lazy">
                         <span class="svc__num mono">03</span>
           </div>
           <div class="svc__body">
             <p class="eyebrow">Right people, right doors</p>
             <h3>Access Control Systems</h3>
-            <p>20+ years in access control — keycards, keypads, and mobile keys that open the door from a phone or a smartwatch.</p>
+            <p>20+ years in access control — PIN keypads that arm and disarm the whole home or business from one code, plus keycards, fobs and phone keys.</p>
             <ul class="ticks">
-              <li>Keycard &amp; fob readers</li><li>Phone &amp; smartwatch keys</li><li>Keypad entry</li><li>Door schedules &amp; audit trails</li>            </ul>
+              <li>PIN keypads &amp; touchscreen panels</li><li>Arm &amp; disarm the whole property</li><li>Keycards, fobs &amp; phone keys</li><li>Door schedules &amp; audit trails</li>            </ul>
             <a class="link" href="contact.html?service=access">Quote access control systems →</a>
           </div>
         </article>
@@ -334,19 +334,18 @@
   <div class="wrap access__in">
     <div class="access__copy reveal">
       <p class="eyebrow">Access control</p>
-      <h2>Your phone is the key. <span class="dim">So is your watch.</span></h2>
-      <p>Replace brass keys you can't track with readers that know who walked in and when. Staff tap a card, a fob, a phone or a smartwatch — and you can add or revoke access in seconds, without changing a lock.</p>
+      <h2>One code secures everything. <span class="dim">Doors, sensors, cameras.</span></h2>
+      <p>The keypad by your door is the control center for the whole home or business. Enter your PIN to arm or disarm every door, window, motion sensor and camera at once — and give staff their own codes, cards, fobs or phone keys that you can change in seconds without changing a lock.</p>
       <ul class="ticks">
-        <li>Keycards, fobs and keypads</li>
-        <li>Mobile keys on phone &amp; smartwatch</li>
+        <li>PIN keypads that arm &amp; disarm the whole property</li>
+        <li>Personal codes, keycards, fobs and phone keys</li>
         <li>Schedules and entry history per door</li>
       </ul>
       <a class="btn" href="contact.html?service=access">Plan my doors</a>
     </div>
-    <div class="access__pics">
-      <img class="reveal" src="assets/images/access-phone.jpg" alt="A person holding a smartphone near a wall-mounted access reader." loading="lazy">
-      <img class="reveal" src="assets/images/access-watch.jpg" alt="Person unlocking a door using a smartwatch as a digital key." loading="lazy">
-    </div>
+    <figure class="access__scene reveal" data-scene="entry">
+      <img src="assets/images/entry-3d.jpg" alt="Security keypad beside a glass entrance door: a PIN is entered, the magnetic lock turns green and the door opens." loading="lazy">
+    </figure>
   </div>
 </section>
 
@@ -422,6 +421,7 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
 <script src="assets/js/hero3d.js" defer></script>
+<script src="assets/js/scenes3d.js" defer></script>
 </main>
 
 <footer class="ftr">
